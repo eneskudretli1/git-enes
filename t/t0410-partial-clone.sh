@@ -567,4 +567,7 @@ test_expect_success 'fetching of missing objects from an HTTP server' '
 	grep "$HASH" out
 '
 
+# DO NOT add non-httpd-specific tests here, because the last part of this
+# test script is only executed when httpd is available and enabled.
+
 test_done
