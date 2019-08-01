@@ -205,7 +205,7 @@ static void cmd_log_init_finish(int argc, const char **argv, const char *prefix,
 	userformat_find_requirements(NULL, &w);
 
 	if (mailmap < 0)
-		mailmap = 0;
+		mailmap = 1;
 
 	if (!rev->show_notes_given && (!rev->pretty_given || w.notes))
 		rev->show_notes = 1;
